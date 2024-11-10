@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Draw app</title>
+		<style>
+			.nav{
+				width:750px;
+				height:50px;
+				background-color:pink;
+				position:fixed;
+				top:10px;
+				left:50%;
+				transform:translateX(-50%);
+				display:flex;
+				align-items:center;
+				justify-content:center;
+			}
+			.clr{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				background-color:#000;
+				margin-right:10px;
+				border:3px solid #fff;
+				cursor:pointer;
+			}
+			.clr:nth-child(1){
+				background-color:#000;
+			}
+			.clr:nth-child(2){
+				background-color:#D7BDE2;
+			}
+			.clr:nth-child(3){
+				background-color:#ABEBC6;
+			}
+			.clr:nth-child(4){
+				background-color:#AED6F1;
+			}
+			.clr:nth-child(5){
+				background-color:#F7DC6F;
+			}
+			.clr:nth-child(6){
+				background-color:#FFBBE5;
+			}
+			.clr:nth-child(7){
+				background-color:#fff;
+			}
+			.clr:nth-child(8){
+				background-color:#FC8989;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<!--#->id, . ->class-->
+		<canvas id="canvas"></canvas>
+		<div class="nav">
+			<div class="clr" data-clr="#000"></div>
+			<div class="clr" data-clr="#D7BDE2"></div>
+			<div class="clr" data-clr="#ABEBC6"></div>
+			<div class="clr" data-clr="#AED6F1"></div>
+			<div class="clr" data-clr="#F7DC6F"></div>
+			<div class="clr" data-clr="#FFBBE5"></div>
+			<div class="clr" data-clr="#fff"></div>
+			<div class="clr" data-clr="#FC8989 "></div>
+			<select class="selector">
+				<option value="">Select line's size</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+			</select>
+			<button class="select">select</button>
+			<input type="color">
+			<button class="color">color</button>
+			<button class="clear">clear</button>
+			<button class="save">save</button>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
